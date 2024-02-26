@@ -1,18 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["@atoms-studio/nuxt-swiftsearch"],
-  build: {
-    transpile: [
-      "@atoms-studio/nuxt-swiftsearch",
-      "algoliasearch",
-      "algoliasearch-helper",
-    ],
-  },
-  vite: {
-    optimizeDeps: {
-      include: ["@atoms-studio/nuxt-swiftsearch", "instantsearch.js"],
-      exclude: ["fsevents", "globby"],
-    },
+  modules: ["@nuxtjs/algolia", "@atoms-studio/nuxt-swiftsearch"],
+  algolia: {
+    apiKey: "latency",
+    applicationId: "6be0576ff61c053d5f9a3225e2a90f76",
   },
 });
