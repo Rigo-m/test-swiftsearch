@@ -12,11 +12,7 @@
 </template>
 
 <script setup lang="ts">
-const title = await useFetch("/api/getTitle");
 const slug = useRoute("slug").params.slug;
-useHead({
-  title: title.data!.value + "-" + slug,
-});
 import algoliasearch from "algoliasearch";
 import type { InstantSearchOptions } from "instantsearch.js";
 
