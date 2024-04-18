@@ -28,6 +28,7 @@ const widgets = computed(() => [
     attribute: "brand",
     showMore: true,
   }),
+  useAisClearRefinements({ includedAttributes: ["brand"] }, "brand"),
   useAisToggleRefinement({ attribute: "free_shipping" }),
   useAisConfigure({
     searchParameters: {
