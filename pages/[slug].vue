@@ -34,6 +34,7 @@ const widgets = computed(() => [
     showMore: true,
   }),
   useAisToggleRefinement({ attribute: "free_shipping" }),
+  useAisClearRefinements({ includedAttributes: ["brand"] }, "brand"),
   useAisConfigure({
     searchParameters: {
       filters: `brand:${slug}`,
