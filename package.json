@@ -15,7 +15,7 @@
     "vue-router": "^4.2.5"
   },
   "devDependencies": {
-    "@atoms-studio/nuxt-swiftsearch": "latest",
+    "@atoms-studio/nuxt-swiftsearch": "^0.4.3",
     "@nuxtjs/algolia": "latest",
     "algoliasearch": "^4.22.1",
     "typescript": "^5.3.3"
