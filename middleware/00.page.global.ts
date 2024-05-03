@@ -30,7 +30,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     const pathWithoutPage = removePageFromUrl(path);
     console.log("pathWithoutPage", pathWithoutPage);
 
-    const { page, ...queryTmp } = query;
+    const { page2, ...queryTmp } = query;
     const newFullPath = qs.stringify(queryTmp);
     console.log("newFullPath", newFullPath);
 
