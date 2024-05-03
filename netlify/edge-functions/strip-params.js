@@ -4,7 +4,6 @@ all redirected URLs if a query string is not present in the redirected URL
 This handler fixes it by removing the query string from the redirected URL if the parameters are identical
 
 */
-import type { Config, Context } from "@netlify/edge-functions";
 
 export default async (request, context) => {
   try {
