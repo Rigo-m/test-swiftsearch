@@ -14,7 +14,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
   if (!isPaginationPage) return;
 
   const { query, path, params, name } = to;
-  const pageValue = query?.page2 ?? false;
+  const pageValue = query?.page ?? false;
   // @ts-ignore
   const pageParam = params?.page ?? false;
 
@@ -30,7 +30,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     const pathWithoutPage = removePageFromUrl(path);
     console.log("pathWithoutPage", pathWithoutPage);
 
-    const { page2, ...queryTmp } = query;
+    const { page, ...queryTmp } = query;
     const newFullPath = qs.stringify(queryTmp);
     console.log("newFullPath", newFullPath);
 
