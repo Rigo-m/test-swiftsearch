@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/algolia", "@atoms-studio/nuxt-swiftsearch"],
   algolia: {
-    applicationId: process.env.id,
-    apiKey: process.env.key,
+    applicationId: "latency",
+    apiKey: "6be0576ff61c053d5f9a3225e2a90f76",
   },
   experimental: {
     typedPages: true,
