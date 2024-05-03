@@ -37,7 +37,7 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     const fullPath = `${pathWithoutPage}/page/${pageValue}${
       newFullPath ? "?" + newFullPath : ""
     }`;
-    console.log("fullPath of redirect", pathWithoutPage);
+    console.log("fullPath of redirect", fullPath);
     return navigateTo(fullPath, {
       redirectCode: 301,
       external: true,
