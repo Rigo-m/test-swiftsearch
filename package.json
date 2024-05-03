@@ -10,13 +10,12 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.10.2",
-    "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
+    "nuxt": "3.10.2",
+    "vue": "3.4.19",
+    "vue-router": "4.2.5"
   },
   "devDependencies": {
-    "@atoms-studio/nuxt-swiftsearch": "^0.4.3",
-    "@nuxtjs/algolia": "latest",
+    "@atoms-studio/nuxt-swiftsearch": "0.4.3",
     "algoliasearch": "^4.22.1",
     "typescript": "^5.3.3"
   }
