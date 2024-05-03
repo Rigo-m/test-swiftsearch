@@ -54,3 +54,7 @@ export default async (request, context) => {
     console.error(err);
   }
 };
+
+export const config = {
+  path: "/*",
+};
