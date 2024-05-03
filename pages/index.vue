@@ -8,10 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import algoliasearch from "algoliasearch";
 import type { InstantSearchOptions } from "instantsearch.js";
 
-const client = algoliasearch(process.env.id!, process.env.key!);
+const client = useAlgoliaRef();
 
 const algoliaRouter = useCustomRouting();
 
