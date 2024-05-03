@@ -15,7 +15,7 @@
   "devDependencies": {
     "@atoms-studio/nuxt-swiftsearch": "^0.4.5",
     "@netlify/edge-functions": "^2.6.0",
-    "@nuxtjs/algolia": "latest",
+    "@nuxtjs/algolia": "^1.10.2",
     "algoliasearch": "^4.22.1",
     "typescript": "^5.3.3"
   }
